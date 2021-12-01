@@ -1,6 +1,6 @@
-- name: Blog
+- name: 隐私协议
   link: /blog/
-- name: About
+- name: 关于
   link: /about/
-- name: Contact
+- name: 联系我们
   link: /contact/
