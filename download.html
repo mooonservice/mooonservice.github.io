@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+
+<script type="text/javascript">
+	        var ua = window.navigator.userAgent.toLowerCase();  
+	        var url_ios =  'weixin://';
+	        var url_ios_download =  'https://apps.apple.com/us/app/%E8%B1%86%E8%8D%9A%E7%9B%B8%E4%BA%B2-%E6%B5%B7%E5%A4%96%E5%8D%8E%E4%BA%BA%E9%83%BD%E5%9C%A8%E7%94%A8%E7%9A%84%E7%9B%B8%E4%BA%B2%E4%BA%A4%E5%8F%8B%E5%B9%B3%E5%8F%B0/id1600606899';
+	        var url_android = 'weixin://';
+	        var url_android_download = 'https://itunes.apple.com/cn/app/jian-kang-mao-rang-yun-dong/id966436668?mt=8';
+	        console.log(url_android);
+	        
+	        //通过window.navigator.userAgent来判断当前设备是IOS还是Android。
+	        if(ua.match(/MicroMessenger/i) == 'micromessenger'){  
+	            window.location.href='downLoadForPhone';  
+	        }else{//非微信浏览器  
+	            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
+	                var loadTime = new Date();
+	                location.href = url_ios;
+	                setTimeout(function(){
+	                    var outTime = new Date()
+	                    if(outTime - loadTime > 800){
+	                        location.href = url_ios_download;
+	                    }           
+	                },1000)
+	            }else if (navigator.userAgent.match(/android/i)) {  
+	                var loadTime = new Date();
+	                location.href = url_android;
+	                setTimeout(function(){
+	                    location.href = url_android_download;
+	                },200)
+	            }  
+	        }  
+	
+</script>>
