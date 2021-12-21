@@ -221,12 +221,12 @@ p.lead {
 }
 
 @media (max-width:991px) {
-    .navbar-nav.is-scrolling {
+/*    .navbar-nav.is-scrolling {
         padding-bottom: 1rem;
     }
     .navbar-nav .nav-item {
         text-align: center;
-    }
+    } */
 }
 
 
