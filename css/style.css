@@ -204,12 +204,12 @@ p.lead {
 }
 
 @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
+    /* .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
         font-size: 14px;
-    }
-    .navbar-nav>.nav-item>.nav-link.active:after {
+    } */
+    /* .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
         border-bottom: 2px solid #cd99d4;
         left: 1rem;
@@ -217,7 +217,7 @@ p.lead {
         bottom: 5px;
         height: 1px;
         position: absolute;
-    }
+    } */
 }
 
 @media (max-width:991px) {
