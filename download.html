@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript">
+	        var ua = window.navigator.userAgent.toLowerCase();  
+	        var url_ios =  'weixin://';
+	        var url_ios_download =  'https://apps.apple.com/app/1600606899';
+	        var url_android = 'weixin://';
+	        var url_android_download = 'https://play.google.com/store/apps/details?id=uni.UNIA84D763';
+	        console.log(url_android);
+
+	        //通过window.navigator.userAgent来判断当前设备是IOS还是Android。
+	        if(ua.match(/MicroMessenger/i) == 'micromessenger'){  
+	            window.location.href='downLoadForPhone';  
+	        }else{//非微信浏览器  
+	            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
+	                var loadTime = new Date();
+	                location.href = url_ios;
+	                setTimeout(function(){
+	                    var outTime = new Date()
+	                    if(outTime - loadTime > 800){
+	                        location.href = url_ios_download;
+	                    }           
+	                },1000)
+	            }else if (navigator.userAgent.match(/android/i)) {  
+	                var loadTime = new Date();
+	                location.href = url_android;
+	                setTimeout(function(){
+	                    location.href = url_android_download;
+	                },200)
+	            }  
+	        }  
+
+</script>
