@@ -15,8 +15,8 @@
 		<link rel="stylesheet" href="../css/style.css" >
 	</head>
 	<body >
-		<h2 style="text-align: center;">点击右上角，</h2>
-		<h2 style="text-align: center;">选择使用默认浏览器打开</h2>
+		<h2 style="text-align: center;" class="wx1"></h2>
+		<h2 style="text-align: center;" class="wx2"></h2>
 		<div class="container" class="bg-gradient" >
 		<div class="call-to-action">
 		<div class="box-icon">
@@ -45,7 +45,10 @@
 
 	        //通过window.navigator.userAgent来判断当前设备是IOS还是Android。
 	        if(ua.match(/MicroMessenger/i) == 'micromessenger'){  
-	            
+	            var wx1 = document.getElementById("wx1");
+				var wx2 = document.getElementById("wx2");
+				wx1.innerText='点击右上角'
+				wx2.innerText='选择默认浏览器打开'
 	        }else{//非微信浏览器  
 	            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
 	                var loadTime = new Date();
