@@ -28,26 +28,18 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<nav class="navbar navbar-dark navbar-expand-lg">
-<a class="navbar-brand" href="../index.html"><img src="../images/logo.png" style="width: 40px;height: 40px;" class="img-fluid" alt="logo"></a>
- 
+<nav id="wx1" >
 
-<ul class="navbar-nav ">
 
-<!-- <li class="nav-item"> -->
-	<!-- <a id='wx1' class="btn btn-outline-light my-3 my-sm-0 ml-lg-3"></a> -->
-	<h3 id='wx1'></h3>
-<!-- </li> -->
-</ul>
 
 </nav>
 </div>
 </div>
 </div>
 </div>
-<header class="bg-gradient" id="home">
+<header  id="home">
 <div class="container">
-<div class="call-to-action">
+<div class="call-to-action bg-gradient" >
 <div class="box-icon">
 	
 	<img src="../images/logo.png" style="width: 70px;height: 70px;" class="img-fluid" alt="logo">
@@ -101,10 +93,12 @@
 	        if(ua.match(/MicroMessenger/i) == 'micromessenger'){  
 	            var wx1 = document.getElementById("wx1");
 				var wx2 = document.getElementById("wx2");
-				wx1.innerText='点击右上角，选择在默认浏览器中打开'
+				wx1.innerHTML='<div  style="display: flex;flex-direction: row;justify-content: flex-end;" ><div><h4 style="color: #000000;text-align: center;">点击右上角</h4><div style="width:100% ;display: flex;flex-direction: row;align-items: center;align-content: center;align-self: center;"><h4 style="color: #000000;text-align: center;">选择在默认浏览器</h4><img src="../images/wx_ice.png" style="width: 25px;height: 25px;" class="img-fluid" alt="logo"><h4 style="color: #000000;text-align: left;">中打开</h4></div></div><div style="width: 80px;height: 45px;"><img src="../images/right_up.png" style="width: 80px;height: 45px;align-self: flex-end;" ></div></div>'
 				
 	        }else{//非微信浏览器  
-	            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
+			var wx1 = document.getElementById("wx1");
+			var wx2 = document.getElementById("wx2");
+			 if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
 	                var loadTime = new Date();
 	                location.href = url_ios;
 	                setTimeout(function(){
