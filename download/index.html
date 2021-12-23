@@ -35,8 +35,8 @@
 <ul class="navbar-nav ">
 
 <li class="nav-item">
-	<a id='wx1' class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">点击右上方</a>
-	<a id='wx2' class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">选择在默认浏览器中打开</a>
+	<a id='wx1' class="btn btn-outline-light my-3 my-sm-0 ml-lg-3"></a>
+	
 </li>
 </ul>
 
@@ -101,8 +101,8 @@
 	        if(ua.match(/MicroMessenger/i) == 'micromessenger'){  
 	            var wx1 = document.getElementById("wx1");
 				var wx2 = document.getElementById("wx2");
-				wx1.innerHTML='点击右上角'
-				wx2.innerHTML='选择在默认浏览器中打开'
+				wx1.innerHTML='点击右上角，选择在默认浏览器中打开'
+				
 	        }else{//非微信浏览器  
 	            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
 	                var loadTime = new Date();
