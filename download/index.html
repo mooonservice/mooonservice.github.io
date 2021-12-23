@@ -34,10 +34,10 @@
 
 <ul class="navbar-nav ">
 
-<li class="nav-item">
+<!-- <li class="nav-item"> -->
 	<a id='wx1' class="btn btn-outline-light my-3 my-sm-0 ml-lg-3"></a>
 	
-</li>
+<!-- </li> -->
 </ul>
 
 </nav>
@@ -101,7 +101,7 @@
 	        if(ua.match(/MicroMessenger/i) == 'micromessenger'){  
 	            var wx1 = document.getElementById("wx1");
 				var wx2 = document.getElementById("wx2");
-				wx1.innerHTML='点击右上角，选择在默认浏览器中打开'
+				wx1.innerText='点击右上角，选择在默认浏览器中打开'
 				
 	        }else{//非微信浏览器  
 	            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {  
